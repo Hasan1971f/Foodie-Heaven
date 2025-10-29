@@ -197,7 +197,7 @@ footer {
 .footer {
     background-color: #111;
     color: white;
-    padding: 50px 20px;
+    padding: 30px 20px;
     margin-top: 60px;
 }
 
@@ -208,10 +208,14 @@ footer {
     gap: 30px;
 }
 
+
+
 .footer-box {
     flex: 1;
     min-width: 220px;
 }
+
+
 
 .footer-box h3 {
     color: #ff6b35;
@@ -224,7 +228,13 @@ footer {
 }
 
 .footer-box ul li {
+    cursor: pointer;
     margin-bottom: 8px;
+}
+
+.footer-box ul li:hover {
+    color: #ff6b35;
+
 }
 
 .footer-bottom {
@@ -235,4 +245,80 @@ footer {
     font-size: 14px;
     color: #aaa;
 
+}
+
+/* ========== Responsive Design ========== */
+
+/* Tablet devices (max width 992px) */
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .features {
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile devices (max width 768px) */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-row img {
+        width: 90%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Very small phones (max width 480px) */
+@media (max-width: 480px) {
+    .hero-text {
+        padding: 30px 20px;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 90%;
+
+    }
+
+    .footer {
+        padding: 40px 15px;
+    }
 }
