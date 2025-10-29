@@ -11,8 +11,48 @@ body {
 }
 
 /* Container Width Control */
-header section footer {
+header,
+section,
+footer {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+}
+
+/* ========== Navbar ========== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    margin-top: 20px;
+
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ff6b35;
+    ;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.10s;
+}
+
+.navbar ul li:hover {
+    transform: scale(1.06);
+    color: #ff6b35;
 }
