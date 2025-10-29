@@ -192,3 +192,47 @@ footer {
     transform: scale(1.06);
 }
 
+/* ==== Footer Section ==== */
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 50px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-box h3 {
+    color: #ff6b35;
+    margin-bottom: 15px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #aaa;
+
+}
